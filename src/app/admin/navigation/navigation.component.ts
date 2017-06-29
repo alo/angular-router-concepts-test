@@ -7,6 +7,11 @@ import { Router } from '@angular/router';
     <div>
       Menu
       <nav>
+      <ul class="nav nav-pills">
+      <li routerLinkActive="active"> <a routerLink="users">users</a></li>
+      <li routerLinkActive="active"> <a routerLink="module2">module2</a></li>
+    </ul>
+      <!--
         <a 
           *ngFor="let item of nav"
           [routerLink]="item.link"
@@ -14,6 +19,7 @@ import { Router } from '@angular/router';
           [routerLinkActiveOptions]="{ exact: item.exact }">
           {{ item.name }}
         </a>
+        -->
       </nav>
     </div>
 

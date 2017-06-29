@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from "@angular/router";
+import { RouterModule, Routes } from "@angular/router";
 import { NavigationComponent } from './navigation/navigation.component';
 
 const routes: Routes = [
@@ -14,6 +14,7 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
   ],
+  exports:[RouterModule],
   declarations: [NavigationComponent]
 })
 export class AdminModule { }
